@@ -24,7 +24,7 @@ public class MestoTest {
         given()
                 .auth().oauth2(bearerToken) // Передаём токен для аутентификации
                 .get("/api/users/me") // Делаем GET-запрос
-                .then().assertThat().body("data.name", equalTo("Incorrect Name")); // Проверяем, что имя соответствует ожидаемому
+                .then().assertThat().body("data.name", equalTo("Аристарх Сократович")); // Проверяем, что имя соответствует ожидаемому
     }
 
     @Test
